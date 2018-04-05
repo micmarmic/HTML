@@ -1,0 +1,39 @@
+.fc { 
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100vh;
+  }
+
+.fc > * {
+    margin: 10px;
+    padding: 20px; 
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+/* make the columns responsive: they will collapse on a narrow  display 
+  .fc > * { min-width: 200px; } 
+
+  .fc.first, .fc.third { flex: 1 }
+.fc.second { flex: 1 }
+  */
+
+
+/* header, 
+footer { 
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100px;
+  margin: 10px;
+  padding: 20px; 
+  border-radius: 10px;
+  background-color: lightgray;
+} */
+
+aside, section {
+    flex: 1;
+}
+
+main  {
+   flex:5;
+}
